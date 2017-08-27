@@ -1,0 +1,22 @@
+{
+  "name": "wee-grid",
+  "version": "1.0.0",
+  "description": "An extremely simple, customizable, and responsive CSS grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecarlisle/wee-grid.git"
+  },
+  "author": "Eric Carlisle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecarlisle/wee-grid/issues"
+  },
+  "homepage": "https://github.com/ecarlisle/wee-grid#readme",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
+}
