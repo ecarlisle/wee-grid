@@ -54,12 +54,12 @@ module.exports = {
 	context: srcPath,
 	entry: {
 		weegrid: [
-			'./weegrid.scss',
+			'./wee-grid.scss',
 		],
 	},
 	output: {
 		path: distPath,
-		filename: 'weegrid.js',
+		filename: '[name].js',
 	},
 	plugins: [
 		new CleanWebpackPlugin([distPath], {}),
