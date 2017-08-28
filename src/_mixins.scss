@@ -1,0 +1,12 @@
+// --------- Grid Column Sets ---------- //
+@mixin column-set ($columns) {
+	@each $name, $width in $breakpoints {
+		@for $j from 1 through $columns {
+			@media (min-width: $width) {
+				.col-#{$name}-#{$j}-#{$columns} {
+					width: $j / $columns * 100%;
+				}
+			}
+		}
+	}
+}

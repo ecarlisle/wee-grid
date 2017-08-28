@@ -1,0 +1,10 @@
+/*!
+TODO : package description
+*/
+@import 'config';
+@import 'mixins';
+
+// TODO : Explain how to make column sets.
+.wg {
+	@include column-set(16);
+}
