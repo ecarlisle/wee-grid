@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "An extremely simple, customizable, and responsive CSS grid",
   "main": "dist/weegrid.css",
+  "files": [
+    "dist/weegrid.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
