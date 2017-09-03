@@ -1,5 +1,6 @@
 // ---------- Breakpoint Widths ---------- //
-// TODO : Explain how to customize breakpoints.
+// Set all media query breakpoint data in the $breakpoints Sass map.
+// Keys will become part of the class names. Use any sizing units you'd like.
 $breakpoints: (
 	sm : 56.7rem,
 	md : 76.8rem,
