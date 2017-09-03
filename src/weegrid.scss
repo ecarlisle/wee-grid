@@ -4,7 +4,40 @@ TODO : package description
 @import 'config';
 @import 'mixins';
 
-// TODO : Explain how to make column sets.
-.wg {
-	@include column-set(16);
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+[class*='col-'] {
+	padding: 0 $column-right-padding 0 0;
+	:last-of-type {
+		padding-right: 0;
+	}
+}
+
+.wg {
+	border: solid 1px red;
+	margin: 0 $grid-right-margin 0 0;
+
+	&:last-of-type {
+		padding: 0;
+	}
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+}
+
+// --------- Specify Column Sets ---------- //
+//
+// Multiple columnsets may be used.
+//
+// @include column-set(6);
+// @include column-set(8);
+// @include column-set(12);
+@include column-set(16);
