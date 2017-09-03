@@ -26,7 +26,7 @@ module.exports = {
 							loader: 'css-loader',
 							options: {
 								sourceMap: true,
-								minimize: true,
+								minimize: false,
 								importLoaders: 2,
 							},
 						},
@@ -34,15 +34,14 @@ module.exports = {
 							loader: 'postcss-loader',
 							options: {
 								plugins: () => [
-									require('css-mqpacker'),
 								],
-								style: 'expanded',
 								sourceMap: false,
 							},
 						},
 						{
 							loader: 'sass-loader',
 							options: {
+								outputStyle: 'expanded',
 								sourceMap: false,
 							}
 						},
