@@ -2,7 +2,7 @@
   "name": "wee-grid",
   "version": "1.0.0",
   "description": "An extremely simple, customizable, and responsive CSS grid",
-  "main": "index.js",
+  "main": "dist/weegrid.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +27,7 @@
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "stylelint-scss": "^2.1.0",
     "webpack": "^3.5.5",
     "webpack-merge": "^4.1.0"
   }
