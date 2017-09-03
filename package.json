@@ -2,7 +2,7 @@
   "name": "wee-grid",
   "version": "1.0.0",
   "description": "An extremely simple, customizable, and responsive CSS grid",
-  "main": "dist/weegrid.css",
+  "main": "wee-grid",
   "files": [
     "dist/weegrid.css"
   ],
