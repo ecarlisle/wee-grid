@@ -2,10 +2,8 @@
   "name": "wee-grid",
   "version": "1.0.0",
   "description": "An extremely simple, customizable, and responsive CSS grid",
-  "main": "wee-grid",
-  "files": [
-    "dist/weegrid.css"
-  ],
+  "main": "dist/weegrid.css",
+  "name": "wee-grid",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
