@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "An extremely simple, customizable, and responsive CSS grid",
   "main": "dist/weegrid.css",
-  "name": "wee-grid",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "stylelint": "stylelint '**/*.scss'"
   },
   "repository": {
     "type": "git",
@@ -28,8 +27,16 @@
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "stylelint-scss": "^2.1.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0",
     "webpack": "^3.5.5",
     "webpack-merge": "^4.1.0"
+  },
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "scss/dollar-variable-pattern": "^foo",
+    "scss/selector-no-redundant-nesting-selector": true
   }
 }
