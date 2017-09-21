@@ -52,8 +52,8 @@ module.exports = {
 	},
 	context: srcPath,
 	entry: {
-		weegrid: [
-			'./weegrid.scss',
+		'wee-grid': [
+			'./wee-grid.scss',
 		],
 	},
 	output: {
