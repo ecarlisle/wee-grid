@@ -2,12 +2,12 @@
 // Set all media query breakpoint data in the $breakpoints Sass map.
 // Keys will become part of the class names. Use any sizing units you'd like.
 $breakpoints: (
-	sm : 56.7rem,
-	md : 76.8rem,
-	lg : 99.2rem,
-	xl : 120rem,
+	sm : 567px,
+	md : 768px,
+	lg : 992px,
+	xl : 1200px,
 );
 
 // ---------- Whitespace Usage ---------- //
-$pad: 2rem;
+$pad: 1rem;
 
