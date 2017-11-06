@@ -41,7 +41,7 @@ module.exports = {
 						{
 							loader: 'sass-loader',
 							options: {
-								outputStyle: 'expanded',
+								outputStyle: ':expanded',
 								sourceMap: false,
 							}
 						},
