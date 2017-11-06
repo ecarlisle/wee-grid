@@ -1,7 +1,7 @@
 // --------- Grid Column Sets ---------- //
 @mixin column-set ($columns) {
 	@each $name, $width in $breakpoints {
-		@media (min-width: $width) {
+		@media all and (min-width: $width) {
 			$selectors: ();
 			@for $i from 1 through $columns {
 				$selector: '.col-#{$name}-#{$i}-#{$columns}';
