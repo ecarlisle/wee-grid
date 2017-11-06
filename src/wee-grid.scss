@@ -20,18 +20,15 @@ TODO : package description 2
 
 [class*='col-'] {
 	float: left;
-	padding-right: $pad;
-	&:last-of-type {
-		padding-right: 0;
-	}
-
+	padding: 0 $pad;
+	width: 100%;
 }
 
 // --------- Specify Column Sets ---------- //
 //
 // Multiple columnsets may be used.
 //
-// @include column-set(2);
+@include column-set(2);
 // @include column-set(4);
 // @include column-set(6);
 // @include column-set(8);
