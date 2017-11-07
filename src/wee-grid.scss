@@ -24,13 +24,10 @@ TODO : package description 2
 	width: 100%;
 }
 
-// --------- Specify Column Sets ---------- //
-//
-// Multiple columnsets may be used.
-//
-@include column-set(2);
+// --------- Specify Column Set(s) ---------- //
+// @include column-set(2);
 // @include column-set(4);
 // @include column-set(6);
 // @include column-set(8);
-// @include column-set(12);
-@include column-set(16);
+@include column-set(12);
+// @include column-set(16);
