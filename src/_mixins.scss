@@ -7,9 +7,6 @@
 				$selector: '.col-#{$name}-#{$i}-#{$columns}';
 				$selectors: append($selectors, unquote($selector), comma);
 			}
-			#{$selectors} {
-				float: left;
-			}
 			@for $j from 1 through $columns {
 				.col-#{$name}-#{$j}-#{$columns} {
 					width: $j / $columns * 100%;
