@@ -25,13 +25,6 @@
   padding-right: 0;
 }
 
-.grid-pad > [class*='col-']:last-of-type {
-  padding-right: $grid-well-size;
-}
-.grid-pad {
-  padding: 20px 0 20px 20px;
-}
-
 // --------- Specify Column Set(s) ---------- //
 // @include column-set(2);
 // @include column-set(4);
