@@ -22,14 +22,6 @@
   padding-right: 0;
 }
 
-.grid-pad > [class*='col-']:last-of-type {
-  padding-right: 20px;
-}
-
-.grid-pad {
-  padding: 20px 0 20px 20px;
-}
-
 @media all and (min-width: 567px) {
   .col-sm-1-12 {
     width: 8.33333%;
