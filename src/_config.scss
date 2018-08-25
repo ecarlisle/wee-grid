@@ -1,6 +1,11 @@
 // ---------- Breakpoint Widths ---------- //
 // Set all media query breakpoint data in the $breakpoints Sass map.
-// Keys will become part of the class names. Use any sizing you'd like.
+// Keys will become part of the class names:
+//
+// [breakpoint name]-[column width]-[total columns]
+//
+// Customize breakpoint sizing, naming to your preference.
+
 $breakpoints: (
 	sm : 567px,
 	md : 768px,
@@ -9,5 +14,7 @@ $breakpoints: (
 );
 
 // ---------- Whitespace Usage ---------- //
-$pad: 1rem;
+// Customize cell padding and gutter size to your preference.
 
+$cell-padding: 10px;
+$grid-well-size: 20px;

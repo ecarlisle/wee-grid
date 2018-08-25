@@ -8,4 +8,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Unneeded dist files.
-dist/weegrid.js
+dist/wee-grid.js

@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://travis-ci.org/ecarlisle/wee-grid.svg?branch=master)](https://travis-ci.org/ecarlisle/wee-grid) [![devDependencies Status](https://david-dm.org/dwyl/hapi-auth-jwt2/dev-status.svg)](https://david-dm.org/dwyl/hapi-auth-jwt2?type=dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![devDependencies Status](https://david-dm.org/dwyl/hapi-auth-jwt2/dev-status.svg)](https://david-dm.org/dwyl/hapi-auth-jwt2?type=dev)
 
 # wee-grid
 Wee-grid An extremely simple, customizable, and responsive CSS grid. Both media query breakpoints and number of grid columns are customizable. Wee-grid uses [Sass](http://sass-lang.com/) for precompiling CSS and [webpack](https://webpack.js.org/) for building the CSS asset.
