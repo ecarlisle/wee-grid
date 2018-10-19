@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  background: #f4cda0;
+  font-family: monospace;
+  
+}
+
+[class*='col-'] {
+  background: #c2d28b;
+  border: solid 10px #c2d28b;
+  border-width: 5px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.col-bg {
+  background: #92b7c2;
+  height: 100%;
+  width: 100%;
+}

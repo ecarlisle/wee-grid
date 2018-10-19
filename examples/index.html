@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wee-grid example</title>
+    <link rel="stylesheet" href="../dist/wee-grid.css">
+    <link rel="stylesheet" href="example.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="row">
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+        <div class="col_sm_6_12 col_md_4_12 col_lg_3_12 col_xl_2_12"></div>
+      </div>
+    </div>
+    <script id="tmpl" type="x-tmpl-mustache">
+      <div class="col-bg">
+      <ul>
+        {{#data}}
+        <li>
+          {{.}}
+        </li>
+        {{/data}}
+      <ul>
+      </
+    </script>
+    <script>
+        const data = {
+          containers: document.querySelectorAll('[class*=col]')
+        }
+        const tmpl = document.getElementById('tmpl').innerHTML
+        Mustache.parse(tmpl)
+        data.containers.forEach(function(el, i) {
+          let cssClasses = el.classList.value.split(' ')
+          console.log(cssClasses)
+          el.innerHTML = Mustache.render(tmpl, {data: cssClasses})
+        })  
+      </script>
+  </body>
+</html>
