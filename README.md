@@ -1,7 +1,3 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
-(https://opensource.org/licenses/MIT) [![devDependencies Status](https://david-dm.org/dwyl/hapi-auth-jwt2/dev-status.svg)](https://david-dm.org/dwyl/hapi-auth-jwt2?type=dev)
-
 # wee-grid
 Wee-grid is an extremely simple, customizable, and responsive CSS grid. Both media query breakpoints and number of grid columns are customizable. Wee-grid uses [Sass](http://sass-lang.com/) for precompiling CSS, [PostCSS](https://postcss.org/) for optimization, and [webpack](https://webpack.js.org/) for builds.
 
