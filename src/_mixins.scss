@@ -1,17 +1,46 @@
 // --------- Grid Column Sets ---------- //
-@mixin column-set ($columns) {
-	@each $name, $width in $breakpoints {
-		@media all and (min-width: $width) {
-			$selectors: ();
+@mixin create-column-set ($columns) {
+	@each $breakpoint-name, $params in $breakpoints {
+
+    $breakpoint-width: 0;
+
+    @if map-has-key($params, breakpoint-width) {
+      $breakpoint-width: map-get($params, breakpoint-width);
+    } @else {
+      @warn 'No \'breakpoint-width\' param for breakpoint \'#{$breakpoint-name}\'';
+    }
+
+    $grid-margin-width: null;
+    @if map-has-key($params, grid-margin-width) {
+      $grid-margin-width: map-get($params, grid-margin-width);
+    }
+
+    $col-gutter-width: null;
+    @if map-has-key($params, col-gutter-width) {
+      $col-gutter-width: map-get($params, col-gutter-width);
+    }
+
+    @media all and (min-width: $breakpoint-width) {
+
+      @if $grid-margin-width {
+        .grid {
+          padding: 0 $grid-margin-width;
+        }
+      }
+  
+      @if $col-gutter-width {
+        .row {
+          margin: 0 -($col-gutter-width/2);
+        }
+        [class*='col_'] {
+          padding: 0 ($col-gutter-width/2);
+        }
+      }
 			@for $i from 1 through $columns {
-				$selector: '.col-#{$name}-#{$i}-#{$columns}';
-				$selectors: append($selectors, unquote($selector), comma);
-			}
-			@for $j from 1 through $columns {
-				.col-#{$name}-#{$j}-#{$columns} {
-					width: $j / $columns * 100%;
-				}
-			}
+				.col_#{$breakpoint-name}_#{$i}_#{$columns} {
+  			  width: $i / $columns * 100%;
+        }
+      }
 		}
 	}
 }

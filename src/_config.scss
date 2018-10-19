@@ -1,20 +1,45 @@
-// ---------- Breakpoint Widths ---------- //
-// Set all media query breakpoint data in the $breakpoints Sass map.
-// Keys will become part of the class names:
+// ---------- Breakpoint Configuration ---------- //
+// Set all media query breakpoint data in the $breakpoints Sass map. Columns are created
+// with the following names, like the Twitter Breakpoint convention:
 //
-// [breakpoint name]-[column width]-[total columns]
+// col_[breakpoint key]_[# of columns]_[total # of columns]
+// Example: col_md_9_12
 //
-// Customize breakpoint sizing, naming to your preference.
+// You can create your own breakpoint names TODO :
 
 $breakpoints: (
-	sm : 567px,
-	md : 768px,
-	lg : 992px,
-	xl : 1200px,
+	sm : (
+    breakpoint-width: 567px,
+    grid-margin-width: 20px,
+    col-gutter-width: 5px,
+  ),
+  md : (
+    breakpoint-width: 768px,
+    grid-margin-width: 30px,
+    col-gutter-width: 10px
+  ),
+	lg : (
+    breakpoint-width: 992px,
+    grid-margin-width: 40px,
+    col-gutter-width: 15px
+  ),
+	xl : (
+    breakpoint-width: 1200px,
+    grid-margin-width: 10px,
+    col-gutter-width: 10px
+  )
 );
 
 // ---------- Whitespace Usage ---------- //
-// Customize cell padding and gutter size to your preference.
+// Set the grid and column gutter to the default values for a mobile-first 
+// grid. These will be used from width of 0px to your first breakpoint.
 
-$cell-padding: 10px;
-$grid-well-size: 20px;
+$default-col-gutter-width: 5px;
+$default-grid-margin-width: 10px;
+$grid-max-width: 1280px;
+
+// ---------- Column Sets ---------- //
+// $column-set-types is a list of column sets you want to create. The default below is a
+// single set of 12 columns. You can use multiple sets by adding column counts to the list.
+
+$column-sets: (12);
